@@ -14,6 +14,7 @@
 		46882C7A20893E79004C0A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46882C7820893E79004C0A54 /* LaunchScreen.storyboard */; };
 		46882C8520893E79004C0A54 /* cargameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46882C8420893E79004C0A54 /* cargameTests.swift */; };
 		46882C9020893E79004C0A54 /* cargameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46882C8F20893E79004C0A54 /* cargameUITests.swift */; };
+		46882C9E208942EB004C0A54 /* DraggedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46882C9D208942EB004C0A54 /* DraggedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		46882C8B20893E79004C0A54 /* cargameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cargameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46882C8F20893E79004C0A54 /* cargameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cargameUITests.swift; sourceTree = "<group>"; };
 		46882C9120893E79004C0A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46882C9D208942EB004C0A54 /* DraggedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				46882C6F20893E79004C0A54 /* AppDelegate.swift */,
 				46882C7120893E79004C0A54 /* ViewController.swift */,
+				46882C9D208942EB004C0A54 /* DraggedImageView.swift */,
 				46882C7320893E79004C0A54 /* Main.storyboard */,
 				46882C7620893E79004C0A54 /* Assets.xcassets */,
 				46882C7820893E79004C0A54 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46882C7220893E79004C0A54 /* ViewController.swift in Sources */,
+				46882C9E208942EB004C0A54 /* DraggedImageView.swift in Sources */,
 				46882C7020893E79004C0A54 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
