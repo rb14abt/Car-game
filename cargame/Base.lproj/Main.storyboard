@@ -23,14 +23,44 @@
                                 <color key="backgroundColor" red="0.30644950270652771" green="0.67797064781188965" blue="0.35680335760116577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="car0" id="LAM-Id-705" customClass="DraggedImageView" customModule="cargame" customModuleProvider="target">
-                                <rect key="frame" x="144" y="511" width="87" height="136"/>
+                                <rect key="frame" x="148" y="511" width="78" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jat-yt-6H0">
+                                <rect key="frame" x="115" y="197" width="159" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Replay" image="replay"/>
+                                <connections>
+                                    <action selector="replayWithReplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ggo-Jd-mnZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D3J-bJ-EoI">
+                                <rect key="frame" x="16" y="20" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eTM-vk-57X">
+                                <rect key="frame" x="43" y="359" width="288" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="2" height="0.0"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="background" destination="mmC-Bp-0Ki" id="oN8-Og-Cc2"/>
+                        <outlet property="highscore" destination="eTM-vk-57X" id="3Hc-D5-mNN"/>
+                        <outlet property="replay" destination="Jat-yt-6H0" id="dJ0-au-wZF"/>
+                        <outlet property="score" destination="D3J-bJ-EoI" id="oOn-rx-hG0"/>
+                        <outlet property="usercar" destination="LAM-Id-705" id="QrF-up-Iih"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -40,5 +70,6 @@
     </scenes>
     <resources>
         <image name="car0" width="382" height="757"/>
+        <image name="replay" width="894" height="894"/>
     </resources>
 </document>
