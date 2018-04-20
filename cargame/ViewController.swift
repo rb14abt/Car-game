@@ -146,7 +146,7 @@ class ViewController: UIViewController, subviewDelegate {
                 
                 let RandomXVar = Int(arc4random_uniform(250) + 50)
                 
-                othercarView.frame = CGRect(x: RandomXVar, y: 0, width: 30, height:50 )
+                othercarView.frame = CGRect(x: RandomXVar, y: 0, width: 40, height:60 )
                 
                 self.view.addSubview(othercarView)
                 
@@ -209,8 +209,11 @@ class ViewController: UIViewController, subviewDelegate {
             
             self.highscore.text = "Highscore: " + self.i.description
             self.highscore.isHidden = false
+            self.highscore.frame = CGRect(x: W * 0.1, y: H * 0.65 , width: W * 0.8, height: H * 0.1)
             self.replay.isHidden = false
+            self.replay.frame = CGRect(x: W * 0.35, y: H * 0.72 , width: W * 0.3, height: H * 0.2)
             self.view.bringSubview(toFront: self.highscore)
+            self.usercar.frame = CGRect(x: W * 0.4, y: H * 0.77 , width: W * 0.2, height: H * 0.33)
 
         }
     }
