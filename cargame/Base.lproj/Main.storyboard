@@ -22,12 +22,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30644950270652771" green="0.67797064781188965" blue="0.35680335760116577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="car0" id="LAM-Id-705" customClass="DraggedImageView" customModule="cargame" customModuleProvider="target">
-                                <rect key="frame" x="148" y="511" width="78" height="136"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jat-yt-6H0">
+                                <rect key="frame" x="116" y="410" width="159" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Replay" image="replay"/>
+                                <connections>
+                                    <action selector="replayWithReplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ggo-Jd-mnZ"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D3J-bJ-EoI">
-                                <rect key="frame" x="16" y="20" width="42" height="21"/>
+                                <rect key="frame" x="16" y="20" width="107" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -44,14 +48,10 @@
                                 <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="2" height="0.0"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jat-yt-6H0">
-                                <rect key="frame" x="114" y="501" width="159" height="157"/>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="car0" id="LAM-Id-705" customClass="DraggedImageView" customModule="cargame" customModuleProvider="target">
+                                <rect key="frame" x="148" y="440" width="78" height="136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Replay" image="replay"/>
-                                <connections>
-                                    <action selector="replayWithReplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ggo-Jd-mnZ"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>

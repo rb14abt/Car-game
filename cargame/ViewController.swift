@@ -73,7 +73,7 @@ class ViewController: UIViewController, subviewDelegate {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        //point = 0;
+        
         
         var imageArray: [UIImage]!
         
@@ -99,12 +99,12 @@ class ViewController: UIViewController, subviewDelegate {
                      UIImage(named: "road20.png")!]
         
         
-     background.image = UIImage.animatedImage(with: imageArray, duration: 3)
+     background.image = UIImage.animatedImage(with: imageArray, duration: 1)
      self.background.frame = CGRect(x: 0, y: 0, width: W, height: H)
         
     usercar.myDelegate = self
         
-   // self.usercar.frame = CGRect(x: W * 0.5 , y: H * 0.15 , width: , height: 70)
+  
     
         replay.isHidden = true
         highscore.isHidden = true
@@ -113,7 +113,7 @@ class ViewController: UIViewController, subviewDelegate {
      dynamicItemBehaviour = UIDynamicItemBehavior(items:[])
      collisionBehaviour = UICollisionBehavior(items:[])
      self.score.text = String(self.point)
-     //self.
+     
         for index in 0...19{
             
             let Delay = Double(self.Array[index])
@@ -140,7 +140,7 @@ class ViewController: UIViewController, subviewDelegate {
                     
                 default : othercarView.image = UIImage(named: "car6.png")
                     
-                //default: barrierView.image = UIImage(named: "lambo.png")
+               
                     
                 }
                 
@@ -165,14 +165,7 @@ class ViewController: UIViewController, subviewDelegate {
                 
                 self.pointArray.append((othercarView))
                 
-                //if self.usercar.frame.intersects(othercarView.frame){
-                   // self.i = self.i + 1
-
                 
-                //self.score.text = String(self.i)
-                
-                               // }
-                //self.point += 1
                 
                 
                 
@@ -213,7 +206,7 @@ class ViewController: UIViewController, subviewDelegate {
             self.replay.isHidden = false
             self.replay.frame = CGRect(x: W * 0.35, y: H * 0.72 , width: W * 0.3, height: H * 0.2)
             self.view.bringSubview(toFront: self.highscore)
-            self.usercar.frame = CGRect(x: W * 0.4, y: H * 0.77 , width: W * 0.2, height: H * 0.33)
+            self.usercar.frame = CGRect(x: W * 0.42, y: H * 0.7 , width: W * 0.16, height: H * 0.27)
 
         }
     }
